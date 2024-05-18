@@ -1,0 +1,378 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+#page1{
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+}
+#page1 #nav{
+  height: 80px;
+  width: 100%;
+  /* background-color: burlywood; */
+
+}
+#nav{
+  height: 100px;
+  width: 100%;
+  /* background-color: green; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px ;
+
+}
+#nav-part1{
+  width:30%;
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav-part1 h4{
+  font-family: sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+
+}
+
+#nav img{
+height: 80px;
+ 
+}
+#nav-part2{
+  width: 30%;
+/* background-color: yellow; */
+display: flex;
+align-items: center;
+justify-content: flex-end;
+}
+
+#nav-part2 button{
+  
+ padding: 10px 10px;
+ border-radius: 50px;
+  font-weight: 600;
+  border: none;
+  color: white;
+  background-color: #000;
+  color: white;
+  font-size: 11px;
+  margin: 0 10px;
+}
+
+#nav-part2 button:nth-last-child(2){
+  background-color: white;
+  color: #000;
+}
+
+#content{
+  height: calc(100% - 90px);
+  width: 100%;
+  /* background-color: blue; */
+  padding-top: 30px;
+}
+
+#content h3{
+  background-color: #FFB0DC;
+  padding: 6px 12px;
+  width: fit-content;
+  border-radius: 50px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 13px;
+    font-family: "Source Serif 4";
+    font-weight: 100;
+    animation-name: color-change;
+   animation-duration: 10s;
+   animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+#content h1{
+  font-family: "Source Serif 4";
+  font-size: 50px;
+  text-align: center;
+  font-weight: 100;
+  margin: 25px 0;
+  line-height: 55px;
+}
+#content h4{
+  font-weight: 300;
+  font-family: "Source Serif 4";
+  text-align: center;
+  font-size: 12px;
+
+}
+
+#content button{
+   
+  padding: 15px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    border: none;
+    color: white;
+    background-color: #000;
+    font-size: 14px;
+    position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 20px 0px ;
+}
+
+#bottom{
+  height: 300px;
+  width: 100%;
+  /* background-color: red; */
+  padding: 5px;
+   /* display: flex;
+  flex-wrap: nowrap;
+  gap:30px; */
+overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+#bottom::-webkit-scrollbar{
+  display: none;
+}
+
+.elem{
+  display: inline-block;
+  position: relative;
+  /* flex-shrink: 0; */
+  height: 100%;
+  width:220px;
+  margin-right: 25px;
+  background-color: blue;
+  border-radius: 15px;
+  overflow: hidden;
+  animation-name: anime;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  /* border: 2px solid black; */
+
+}
+
+.elem img{
+  height: 100%;
+  width: 100%;
+ object-fit: cover;
+ object-position: center;
+}
+.elem video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#page2{
+  margin-top: 160px;
+  height: 100%;
+  width: 100%;
+  /* background-color: aquamarine; */
+  position: relative;
+   padding: 60px;
+}
+#page2 h1{
+font-family: "Source Serif 4";
+  text-align: center;
+  font-weight: 500 ;
+  font: 60px;
+  margin-bottom: 50px ;
+}
+
+.box{
+  height: 200px;
+  width: 250px;
+  /* background-color: red; */
+  border-radius: 10px;
+overflow: hidden;
+display: inline-block;
+margin: 10px;
+  position: relative;
+  
+
+}
+.box img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+
+}
+.box video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.box-bottom{
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  background:linear-gradient( transparent,rgb(66, 66, 66));
+  bottom: -40%;
+  transition: all ease 0.5s;
+  color:#fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+font-family: "Source Serif 4";
+}
+.box-bottom i{
+  background-color: #fff;
+  padding: 8px 9px;
+  color: #000;
+  border-radius: 50%;
+  font-size: 15px;
+}
+.box-bottom i {
+  background-color: #fff;
+  padding: 8px 9px;
+  color: #000;
+  font-size: 15px;
+}
+.box:hover .box-bottom{
+  bottom: 0;
+
+}
+
+.box:hover{
+  box-shadow: 0px 0px 2px   rgb(95, 93, 93);
+}
+
+@keyframes anime{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+ 
+}
+
+
+
+/* color button animation */
+@keyframes color-change {
+  0% {
+    background-color: #ee8f7f;
+    /* Tomato */
+  }
+
+  25% {
+    background-color: #ffa500;
+    /* Orange */
+  }
+
+  50% {
+    background-color: #8cf38c;
+    /* Lime Green */
+  }
+
+  75% {
+    background-color: #7db6ef;
+    /* Dodger Blue */
+  }
+
+  100% {
+    background-color: #FFACE6;
+    /* Back to Tomato */
+  }
+}
+
+
+
+#page3{
+  margin-top: 300px;
+    height: 100%;
+    width: 100%;
+    background-color: #FFDA79;
+    position: relative;
+    padding: 90px;
+}
+
+#page3 h1{
+  font-size: 65px;
+  font-family: "Source Serif 4";
+  text-align: center;
+  font-weight: 100;
+  line-height: 70px;
+  margin-bottom: 35px;
+}
+#page3 h4 {
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: 1;
+  letter-spacing: 1px;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+
+#page3 #center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#center button{
+  font-size: 14px;
+  font-weight: 100;
+  padding: 18px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  border: none;
+  color: white;
+  background-color: #000;
+  margin: 5px;
+}
+#center button:nth-last-child(1){
+  color: black;
+  background-color: white;
+}
+
+#page4{
+  height:100% ;
+  width: 100%;
+  white-space: nowrap;
+  padding: 50px 10px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  /* background-color: red; */
+  
+}
+#page4::-webkit-scrollbar{
+  display: none;
+}
+ #scroll img{
+  height: 150px;
+  width: 220px;
+  border-radius: 10px;
+  margin-right: 20px;
+  animation-name: scroll;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+}
+
+
+@keyframes scroll{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+}
